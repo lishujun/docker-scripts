@@ -19,7 +19,7 @@ EXPOSE 80
 ADD mysql-community-release-el7-5.noarch.rpm /tmp
 RUN rpm -ivh /tmp/mysql-community-release-el7-5.noarch.rpm
 RUN yum install -y mysql-server mysql-client mysql-devel
-RUN systemctl enable mysqld.service
+#RUN systemctl enable mysqld.service
 EXPOSE 3306
 
 # set system startup program
