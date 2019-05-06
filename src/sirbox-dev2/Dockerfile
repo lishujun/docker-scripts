@@ -14,7 +14,8 @@ EXPOSE 22
 RUN chmod +x /etc/rc.d/rc.local
 
 # mysql innodb aio
-RUN yum install -y libaio
+#RUN yum install -y libaio
+ADD my.cnf /etc
 
 # set system startup program
 ENTRYPOINT ["/usr/sbin/init"]
