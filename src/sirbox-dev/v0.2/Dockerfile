@@ -2,7 +2,7 @@ FROM sirbox/dev:0.1
 MAINTAINER lishujun lishujun@sirbox.cn
 
 # set root password
-RUN echo "root:sirbox.cn" | chpasswd
+RUN echo "root:1q@W3e$R" | chpasswd
 
 # install ssh
 RUN yum install -y openssl openssh-server
